@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View ,Image, TouchableOpacity, } from 'react-native';
 import { color } from 'react-native-reanimated';
-import { AntDesign } from '@expo/vector-icons';  
+import {Icons}from "@expo/vector-icons";  
 
 
 /*
@@ -34,15 +34,13 @@ export default function App() {
           <TouchableOpacity
           style={styles.googlebutton}
           >
-              <AntDesign name="google" size={24} color="#FF8C00" />
+              <Icons name="apple" siz={24} color= "white"/>
              <Text style={styles.bottontext}>Login with Gmail</Text>
              
           </TouchableOpacity>
            <TouchableOpacity
           style={styles.applebutton}
-          >  
-          <AntDesign name="apple1" siz={50} color= "white"/>
-          
+          >
              <Text style={styles.appletext}>Login with Apple</Text>
              
           </TouchableOpacity>
@@ -98,10 +96,6 @@ const styles = StyleSheet.create({
     marginTop :10,
     borderRadius:10,
     alignItems: 'center',
-    flexDirection:'row',
-    justifyContent: 'center',
-    
-
     
   
     
@@ -112,9 +106,7 @@ const styles = StyleSheet.create({
     padding: 15,
     marginTop :10,
     borderRadius:10,
-    flexDirection:'row',
     alignItems: 'center',
-    justifyContent: 'center',
     
   
     
